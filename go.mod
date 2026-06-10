@@ -1,4 +1,4 @@
-module code.cloudfoundry.org/db-helpers
+module code.cloudfoundry.org/diego-db-helpers
 
 go 1.26
 
