@@ -1,32 +1,27 @@
 # diego-db-helpers
 
-[![Go Report Card](https://goreportcard.com/badge/code.cloudfoundry.org/diego-db-helpers)](https://goreportcard.com/report/code.cloudfoundry.org/diego-db-helpers)
-[![Go Reference](https://pkg.go.dev/badge/code.cloudfoundry.org/diego-db-helpers.svg)](https://pkg.go.dev/code.cloudfoundry.org/diego-db-helpers)
+[![Go Report
+Card](https://goreportcard.com/badge/code.cloudfoundry.org/diego-db-helpers)](https://goreportcard.com/report/code.cloudfoundry.org/diego-db-helpers)
+[![Go
+Reference](https://pkg.go.dev/badge/code.cloudfoundry.org/diego-db-helpers.svg)](https://pkg.go.dev/code.cloudfoundry.org/diego-db-helpers)
 
 SQL helper utilities used by Diego components. Extracted from
-`code.cloudfoundry.org/bbs` to break a circular submodule dependency and make
-the helpers independently consumable.
+`code.cloudfoundry.org/bbs` to break a circular submodule dependency and
+make the helpers independently consumable.
 
-Provides:
+Provides SQL query helpers, connection management with optional TLS, a
+transaction wrapper with deadlock retry, and Ginkgo-compatible test
+runners for MySQL and PostgreSQL.
 
-- `sqldb/helpers` — SQL query helpers (select, insert, update, delete, upsert,
-  count), a transaction wrapper with deadlock retry, connection management with
-  optional TLS, and a `QueryableDB`/`Tx` abstraction with in-flight monitoring
-- `sqldb/helpers/monitor` — atomic in-flight and duration tracking for DB
-  operations
-- `guidprovider` — UUID v4 generation interface and default implementation
-- `testhelpers/sqlrunner` — Ginkgo-compatible MySQL and PostgreSQL test runners
-  for spinning up isolated test databases
-
-> [!NOTE]
+> \[!NOTE\]
 >
 > This repository should be imported as
 > `code.cloudfoundry.org/diego-db-helpers`.
 
 # Contributing
 
-See the [Contributing.md](./.github/CONTRIBUTING.md) for more information on
-how to contribute.
+See the [Contributing.md](./.github/CONTRIBUTING.md) for more
+information on how to contribute.
 
 # Working Group Charter
 
@@ -34,7 +29,7 @@ This repository is maintained by [App Runtime
 Platform](https://github.com/cloudfoundry/community/blob/main/toc/working-groups/app-runtime-platform.md)
 under `Diego` area.
 
-> [!IMPORTANT]
+> \[!IMPORTANT\]
 >
 > Content in this file is managed by the [CI task
 > `sync-readme`](https://github.com/cloudfoundry/wg-app-platform-runtime-ci/blob/main/shared/tasks/sync-readme/metadata.yml)
