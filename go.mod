@@ -1,6 +1,6 @@
 module code.cloudfoundry.org/diego-db-helpers
 
-go 1.26
+go 1.26.0
 
 require (
 	code.cloudfoundry.org/lager/v3 v3.73.0
