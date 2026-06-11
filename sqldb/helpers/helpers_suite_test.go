@@ -54,11 +54,13 @@ var _ = BeforeEach(func() {
 		dbDriverName = "postgres"
 		user, ok := os.LookupEnv("DB_USER")
 		if !ok {
-			user = "diego"
+			// matches the default POSTGRES_USER created by configure_db in the
+			// tas-runtime-postgres CI image
+			user = "postgres"
 		}
 		password, ok := os.LookupEnv("DB_PASSWORD")
 		if !ok {
-			password = "diego_pw"
+			password = "password"
 		}
 		dbBaseConnectionString = fmt.Sprintf("postgres://%s:%s@localhost/", user, password)
 		dbFlavor = helpers.Postgres
@@ -66,11 +68,13 @@ var _ = BeforeEach(func() {
 		dbDriverName = "mysql"
 		user, ok := os.LookupEnv("DB_USER")
 		if !ok {
-			user = "diego"
+			// matches the default MYSQL_ROOT_PASSWORD user created by configure_db
+			// in the tas-runtime-mysql CI images
+			user = "root"
 		}
 		password, ok := os.LookupEnv("DB_PASSWORD")
 		if !ok {
-			password = "diego_password"
+			password = "password"
 		}
 		dbBaseConnectionString = fmt.Sprintf("%s:%s@/", user, password)
 		dbFlavor = helpers.MySQL
