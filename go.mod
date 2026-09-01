@@ -3,12 +3,12 @@ module code.cloudfoundry.org/diego-db-helpers
 go 1.26.0
 
 require (
-	code.cloudfoundry.org/lager/v3 v3.82.0
+	code.cloudfoundry.org/lager/v3 v3.84.0
 	github.com/go-sql-driver/mysql v1.10.0
 	github.com/jackc/pgx/v5 v5.10.0
 	github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d
 	github.com/onsi/ginkgo/v2 v2.32.1
-	github.com/onsi/gomega v1.42.1
+	github.com/onsi/gomega v1.43.0
 	github.com/tedsuo/ifrit v0.0.0-20260813155221-94822c932811
 )
 
@@ -18,7 +18,7 @@ require (
 	github.com/go-logr/logr v1.4.4 // indirect
 	github.com/go-task/slim-sprig/v3 v3.0.0 // indirect
 	github.com/google/go-cmp v0.7.0 // indirect
-	github.com/google/pprof v0.0.0-20260824235931-c0b50f2f6510 // indirect
+	github.com/google/pprof v0.0.0-20260830191439-4932ad3515ea // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect
 	github.com/jackc/puddle/v2 v2.2.2 // indirect
