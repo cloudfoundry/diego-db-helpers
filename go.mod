@@ -3,12 +3,12 @@ module code.cloudfoundry.org/diego-db-helpers
 go 1.26.0
 
 require (
-	code.cloudfoundry.org/lager/v3 v3.86.0
+	code.cloudfoundry.org/lager/v3 v3.87.0
 	github.com/go-sql-driver/mysql v1.10.1
 	github.com/jackc/pgx/v5 v5.11.0
 	github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d
-	github.com/onsi/ginkgo/v2 v2.32.2
-	github.com/onsi/gomega v1.43.0
+	github.com/onsi/ginkgo/v2 v2.33.0
+	github.com/onsi/gomega v1.43.1
 	github.com/tedsuo/ifrit v0.0.0-20260908181113-dd353a7daa27
 )
 
